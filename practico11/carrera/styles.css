@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.pista {
+    width: 600px;
+    height: 200px;
+    border: 2px solid black;
+    position: relative;
+    background-color: lightgray;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
