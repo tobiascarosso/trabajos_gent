@@ -145,5 +145,36 @@ console.log(personasConMasDe27);
 
 //CAMINO A OSCAR
 
-let actoresVocales = []
-let actoresPrincipales = ["Tom Hanks", "Johnny Depp", "Elizabeth Taylor", "Morgan Freeman", "Jennifer Aniston", "Meryl Streep", "Natalie Portman", "Ashton Kutcher"]
+let actoresVocales = [];
+let actoresPrincipales = ["Tom Hanks", "Johnny Depp", "Elizabeth Taylor", "Morgan Freeman", "Jennifer Aniston", "Meryl Streep", "Natalie Portman", "Ashton Kutcher"];
+
+let peliculas2 = [];
+let actoresPrincipalesPorPelicula = {
+    "Titanic": "Leonardo DiCaprio",
+    "El Padrino": "Al Pacino",
+    "Matrix": "Keanu Reeves",
+    "Iron Man": "Robert Downey Jr",
+    "Soy leyenda": "Will Smith",
+    "Bastardos sin gloria": "Brad Pitt"
+};
+
+actoresPrincipales.forEach(actor => {
+    if (/^[aeiou]/i.test(actor.split(" ")[0])) {
+        actoresVocales.push(actor);
+    }
+});
+
+for (let pelicula in actoresPrincipalesPorPelicula) {
+    actoresPrincipales.push(actoresPrincipalesPorPelicula[pelicula]);
+    peliculas2.push(pelicula);
+}
+
+let peliculaPorActor = {};
+
+for (let pelicula in actoresPrincipalesPorPelicula) {
+    let actor = actoresPrincipalesPorPelicula[pelicula];
+    if (!peliculaPorActor[actor]) {
+        peliculaPorActor[actor] = [];
+    }
+    peliculaPorActor[actor].push(pelicula);
+}
