@@ -185,10 +185,7 @@ for (let pelicula in actoresPrincipalesPorPelicula) {
 
 function calcularValorTotal(ecommerce) {
     return ecommerce.map(producto => {
-        return {
-            nombre: producto.nombre,
-            total: producto.precio * producto.articulos
-        };
+        return { [producto.nombre]: producto.precio * producto.articulos };
     });
 }
 
@@ -202,4 +199,4 @@ let ecommerce = [
 
 
 let resultado = calcularValorTotal(ecommerce);
-resultado.forEach(item => console.log(`${item.nombre}: ${item.total}`));
+console.log(resultado);
