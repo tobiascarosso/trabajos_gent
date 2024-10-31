@@ -4,3 +4,7 @@
     align-items: center;
     cursor: pointer;
 }
+
+.oculto {
+    display: none;
+}

@@ -8,3 +8,6 @@ divMagia.addEventListener('mouseenter', function() {
 divMagia.addEventListener('mouseleave', function() {
     imagenSecreta.style.display = 'block';
 });
+
+
+
