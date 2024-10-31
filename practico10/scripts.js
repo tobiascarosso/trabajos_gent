@@ -141,3 +141,9 @@ let personas = [
 
 let personasConMasDe27 = personas.filter(persona => parseInt(persona.edad) > 27);
 console.log(personasConMasDe27);
+
+
+//CAMINO A OSCAR
+
+let actoresVocales = []
+let actoresPrincipales = ["Tom Hanks", "Johnny Depp", "Elizabeth Taylor", "Morgan Freeman", "Jennifer Aniston", "Meryl Streep", "Natalie Portman", "Ashton Kutcher"]
