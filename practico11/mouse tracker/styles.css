@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    background-image: url('https://i.imgur.com/jnCXdAx.jpg');
+    background-size: cover;
+}
+
+.fixed {
+    position: fixed;
+}
